@@ -1,8 +1,13 @@
 #!/bin/bash
 
-backup_dirs=("/etc" "/srv" "/boot" "/home/prairiewaltz/Desktop" "/home/prairiewaltz/Downloads")
+# Backup specified disks with bash command #
+
+# "*" indicates value which is system dependent #
+
+
+backup_dirs=("/*" "/*" "/*" "/home/*/Desktop" "/home/*/Downloads")
 dest_dir="/tmp/backup"
-dest_server="prairiewaltz@10.0.2.15"
+dest_server="*@*"
 backup_date=$(date +%b-%d-%Y-%H-%M-%S)
 
 echo "Grabbing the backup of: ${backup_dirs[@]}"
