@@ -18,7 +18,7 @@ mkdir -p $savePath/$saveFolder
 echo -e "Directory $saveFiles/$saveFolder created\n"
 sleep .75
 
-# Get GoBuster Wordlist
+# Get Wordlist
 echo -e "\nPlease enter a path to your preferred wordlist: "
 read wordlist
 echo -e "Using $wordlist\n"
@@ -31,7 +31,7 @@ echo -e "\n$(date +%b-%d-%Y-%H:%M)" >> $savePath/$saveFolder/goBusterInitial.txt
 echo -e "Gobuster complete. File saved as goBusterInitial.txt\n"
 sleep 1
 
-# Get FFUF Wordlist
+# Get Wordlist ??
 echo -e "\033[32mWould you like to use the same wordlist? (y or n): \033[0m"
 read yorn
 if [ $yorn != "y" ]; then
